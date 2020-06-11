@@ -1,0 +1,545 @@
+.banner {
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+}
+
+.banner-two {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 670px;
+  background: linear-gradient(360deg,rgba(123,230,255,1) 0%,rgba(9,147,255,1) 100%);
+}
+
+.banner-two .cloud-one {
+  position: absolute;
+  left: 0;
+  top: 88px;
+  width: 237px;
+  height: 49px;
+  background: url('https://video.my51share.com/image/default/5063EA7899AA4371AD096D82C26AC9D3-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .cloud-two {
+  position: absolute;
+  left: 15%;
+  top: 258px;
+  width: 157px;
+  height: 30px;
+  background: url('https://video.my51share.com/image/default/237E6774BB284089953C3ED16379FF45-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .cloud-three {
+  position: absolute;
+  right: 37%;
+  top: 106px;
+  width: 237px;
+  height: 49px;
+  background: url('https://video.my51share.com/image/default/457C78BE45B242EFABC1E5089D1DBED3-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .cloud-four {
+  position: absolute;
+  right: 17%;
+  top: 257px;
+  width: 237px;
+  height: 49px;
+  background: url('https://video.my51share.com/image/default/457C78BE45B242EFABC1E5089D1DBED3-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .cake {
+  position: absolute;
+  left: 24%;
+  bottom: 0px;
+  width: 156px;
+  height: 217px;
+  background: url('https://video.my51share.com/image/default/02A75DB04D5C418282984551E1175C5D-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .kid {
+  position: absolute;
+  right: 20%;
+  bottom: 0px;
+  width: 703px;
+  height: 434px;
+  background: url('https://video.my51share.com/image/default/B08BE94C51D74B03A9E7C2ED10E86BE0-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .font-box {
+  position: absolute;
+  left: 26%;
+  top: 247px;
+  z-index: 999;
+}
+
+.banner-two .font-box span {
+  display: block;
+}
+
+.banner-two .font-box .font-title {
+  font-size:54px;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  line-height:80px;
+}
+
+.banner-two .font-box .font-title i {
+  font-style: normal;
+  color: #FEB72D;
+}
+
+.banner-two .font-box .font-content {
+  font-size:24px;
+  font-family:Alibaba-PuHuiTi-R,Alibaba-PuHuiTi;
+  font-weight:normal;
+  color:rgba(255,255,255,1);
+  line-height:34px;
+  margin-top: 4px;
+}
+
+.banner-two .font-box .font-btn {
+  width:205px;
+  height:58px;
+  text-align: center;
+  line-height: 58px;
+  border-radius:35px;
+  border:2px solid rgba(255,255,255,1);
+  font-size:23px;
+  font-weight:normal;
+  color:rgba(255,255,255,1);
+  margin-top: 23px;
+}
+
+.banner-two .cloud-five {
+  position: absolute;
+  right: 10%;
+  top: 133px;
+  width: 219px;
+  height: 33px;
+  background: url('https://video.my51share.com/image/default/6EB90B02EFA54ED081952267AAF07BBC-6-2.png') bottom center no-repeat;
+}
+
+.banner-two .bottom-bg {
+  width: 100%;
+  height: 100%;
+  background: url('https://video.my51share.com/image/default/57A11322C5D54CB9A0CD71AED190F664-6-2.png') bottom center no-repeat;
+}
+
+.banner-one {
+  position: relative;
+  width: 100%;
+  height: 670px;
+  background: linear-gradient(360deg,rgba(40,31,207,1) 0%,rgba(22,56,241,1) 100%);
+}
+
+.banner-one .one {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-one .two {
+  position: absolute;
+  top: 15px;
+  left: 25%;
+}
+
+.banner-one .three {
+  position: absolute;
+  top: 62px;
+  right: 28%;
+}
+
+.banner-one .four {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.banner-one .five {
+  position: absolute;
+  left: 34%;
+  bottom: 145px;
+}
+
+.banner-one .six {
+  position: absolute;
+  bottom: 0;
+  left: 13%;
+}
+
+.banner-one .seven {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.banner-one .eight {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+}
+
+.banner-one .font-box {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  height: 127px;
+}
+
+.banner-one span {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.banner-one span.font-title {
+  font-size:60px;
+  font-weight: normal;
+  color: rgba(255,255,255,1);
+  line-height: 82px;
+  text-shadow: 0px 6px 34px rgba(1,17,213,0.84);
+  background: linear-gradient(270deg, rgba(251,253,254,1) 60%, rgba(147,160,243,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-one span.font-content {
+  font-size:24px;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:28px;
+  margin-top: 30px;
+}
+
+.banner-one span.font-content i {
+  font-style: normal;
+  color: #F35D08;
+}
+
+@media screen and (max-width: 2000px) {
+
+  .banner-one .six {
+    left: 5%;
+  }
+
+  .banner-one .eight {
+    right: 4%;
+  }
+
+  .banner-two .cloud-one {
+    left: -5%;
+  }
+
+  .banner-two .cloud-two {
+    left: 10%;
+  }
+
+  .banner-two .cloud-five {
+    right: 2%;
+  }
+
+  .banner-two .cloud-four {
+    right: 10%;
+  }
+  
+  .banner-two .cake {
+    left: 15%;
+  }
+
+  .banner-two .font-box {
+    left: 20%;
+  }
+
+  .banner-two .kid {
+    right: 12%;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .banner-one .one {
+    left: -100px;
+  }
+
+  .banner-one .four {
+    right: -100px;
+  }
+}
+  
+@media screen and (max-width: 1800px) {
+
+  .banner-two .cloud-one {
+    left: -20%;
+  }
+
+  .banner-two .cloud-two {
+    left: 5%;
+  }
+
+  .banner-two .cloud-five {
+    right: -3%;
+  }
+
+  .banner-two .cloud-four {
+    right: 5%;
+  }
+  
+  .banner-two .cake {
+    left: 10%;
+  }
+
+  .banner-two .font-box {
+    left: 15%;
+  }
+
+  .banner-two .kid {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .banner-one .one {
+    left: -200px;
+  }
+
+  .banner-one .six {
+    left: -4%;
+  }
+
+  .banner-one .eight {
+    right: -6%;
+  }
+
+  .banner-one .four {
+    right: -200px;
+  }
+
+  .banner-two .cloud-one {
+    left: -20%;
+  }
+
+  .banner-two .cloud-two {
+    left: -3%;
+  }
+
+  .banner-two .cloud-five {
+    right: -6%;
+  }
+
+  .banner-two .cloud-four {
+    right: 0%;
+  }
+  
+  .banner-two .cake {
+    left: 5%;
+  }
+
+  .banner-two .font-box {
+    left: 10%;
+  }
+
+  .banner-two .kid {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .banner-one .one {
+    left: -250px;
+  }
+
+  .banner-one .six {
+    left: -8%;
+  }
+
+  .banner-one .eight {
+    right: -10%;
+  }
+
+  .banner-one .four {
+    right: -250px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-one .one {
+    left: -250px;
+  }
+
+  .banner-one .six {
+    left: -14%;
+  }
+
+  .banner-one .eight {
+    right: -16%;
+  }
+
+  .banner-one .four {
+    right: -250px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+
+  .banner-one .six {
+    left: -20%;
+  }
+
+  .banner-one .eight {
+    right: -24%;
+  }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+  .banner-one .six {
+    left: -26%;
+  }
+
+  .banner-one .eight {
+    right: -30%;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .mobile-phone {
+    width: 100%;
+    height: 7.02rem;
+  }
+
+  .banner-two .font-box .max-width-show {
+    display: block;
+  }
+
+  .banner-two .font-box .min-width-show {
+    display: none;
+  }
+
+  .banner-two {
+    height: 7.02rem;
+  }
+  
+  .banner-two .font-box {
+    width: 100%;
+    font-size: 0.47rem;
+    left: 0;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:0.66rem;
+    top: .77rem;
+    padding: 0 .7rem;
+    box-sizing: border-box;
+  }
+
+  .banner-two .font-box .font-title {
+    font-size:0.47rem;
+    color:rgba(255,255,255,1);
+    line-height:0.66rem;
+  }
+
+  .banner-two .font-box .font-content {
+    font-size:0.18rem;
+    color:rgba(255,255,255,1);
+    line-height:0.24rem
+  }
+
+  .banner-two .font-box .font-btn {
+    font-size:0.2rem;
+    font-weight:normal;
+    color:rgba(255,255,255,1);width:2.01rem;
+    height:0.57rem;
+    border-radius:0.35rem;
+    line-height: .57rem;
+    border:0.02rem solid rgba(255,255,255,1);
+  }
+
+  .banner-two .kid {
+    position: absolute;
+    left: 50%;
+    margin-left: -3.445rem;
+    bottom: 0px;
+    width: 6.89rem;
+    height: 4.25rem;
+    background: url(https://video.my51share.com/image/default/B08BE94C51D74B03A9E7C2ED10E86BE0-6-2.png) bottom center no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-phone {
+    width: 100%;
+    height: 14.34rem;
+  }
+
+  .banner-two .font-box .max-width-show {
+    display: none;
+  }
+
+  .banner-two .font-box .min-width-show {
+    display: block;
+  }
+
+  .banner-two {
+    height: 14.34rem;
+  }
+  
+  .banner-two .font-box {
+    width: 100%;
+    font-size: 0.47rem;
+    left: 0;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:0.66rem;
+    top: 1.58rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+  }
+
+  .banner-two .font-box .font-title {
+    font-size:0.9rem;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:1.34rem;
+    text-align: center;
+  }
+
+  .banner-two .font-box .font-content {
+    width:4.84rem;
+    height:0.96rem;
+    font-size:0.36rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.48rem;
+    text-align: center;
+    margin: .26rem auto .44rem;
+  }
+
+  .banner-two .font-box .font-btn {
+    width:4.1rem;
+    height:1.16rem;
+    border-radius:0.71rem;
+    border:0.04rem solid rgba(255,255,255,1);
+    font-size:0.4rem;
+    font-weight:normal;
+    color:rgba(255,255,255,1);
+    line-height:1.16rem;
+    margin: auto;
+  }
+  
+  .banner-two .kid {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -3.75rem;
+    width:7.5rem;
+    height:6.34rem;
+    background: url(https://video.my51share.com/image/default/B08BE94C51D74B03A9E7C2ED10E86BE0-6-2.png) bottom center no-repeat;
+    background-size: auto 100%;
+  }
+}

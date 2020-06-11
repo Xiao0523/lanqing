@@ -1,0 +1,60 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.page.header {}
+
+.page.header .nav-list li a {
+  color: #333333;
+}
+
+.page.header .nav-list li a:hover, .page.header .nav-list li a.active {
+  color: rgba(0,210,165,1);
+}
+
+.page.header .nav-list li a:hover::after, .page.header .nav-list li a.active::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: rgba(0,210,165,1);
+  bottom: -10px;
+}
+
+.page.header .nav-list li.nav-btn a::after {
+  display: none;
+}
+
+.page.header .nav-list li.nav-btn a {
+  border: 1px solid rgba(0,210,165,1);
+  color:rgba(0,210,165,1)
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background: #000; */
+  padding-bottom: 125px;
+  box-sizing: border-box;
+}
+
+.phone-bg {
+  position: absolute;
+  right: 177px;
+  top: 158px;
+}
+
+.pages.footer {
+  position: fixed;
+  bottom: 0;
+  height: 117px;
+  border-top: 1px solid rgba(216,216,216,1);
+}
+
+.pages.footer span {
+  line-height: 117px;
+  height: 117px;
+}
