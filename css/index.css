@@ -448,6 +448,7 @@
 }
 
 .student-box .input {
+  position: relative;
   margin-right: 90px;
 }
 
@@ -466,6 +467,17 @@
   outline: none;
   padding: 0 22px;
   box-sizing: border-box;
+}
+
+.input .error {
+  position: absolute;
+  display: none;
+  width: 100%;
+  padding-left: 84px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 40px;
+  color: red;
 }
 
 .student-box .input textarea {
@@ -605,12 +617,18 @@
   position: fixed;
   bottom: 80px;
   right: 10px;
-  z-index: 99;
+  z-index: 1000;
 }
 
 .function-box .ewm-img {
   position: relative;
   top: -60px;
+  width: 167px;
+  height: 172px;
+}
+
+.function-box .ewm-img img {
+  width: 100%;
 }
 
 .function-btn span {
@@ -727,8 +745,21 @@
   }
 
   .student-box .input input, .student-box .input textarea {
+    display: block;
     width: 75%;
+    text-align: left;
   }
+
+  .input .error {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding-left: 25%;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 40px;
+  }
+  
 
   .student-box .input.code input {
     width: 55%;
@@ -1029,6 +1060,17 @@
     width: 100%;
   }
 
+  
+  .input .error {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 0;
+    margin-top: -.05rem;
+  }
+  
+
   .student-box .input.code input {
     width: 70%;
   }
@@ -1067,7 +1109,7 @@
   .student-box .input, .input-box {
     width: 100%;
     margin: 0;
-    margin-bottom: .32rem;
+    margin-bottom: .4rem;
   }
 
   .input-box {
@@ -1080,6 +1122,16 @@
 
   .student-box .input input, .student-box .input textarea {
     width: 100%;
+  }
+
+  .input .error {
+    position: absolute;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: .4rem;
+    padding-left: 0;
   }
 
   .student-box .input.code input {

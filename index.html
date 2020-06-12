@@ -47,12 +47,6 @@
           <span class="font-content">才艺秀广场，展现您孩子的魅力，让TA成为小童星～</span>
           <span class="font-btn">立即参与活动</span>
         </div>
-        <!-- <div class="cloud-one"></div>
-        <div class="cloud-two"></div>
-        <div class="cloud-three"></div>
-        <div class="cloud-four"></div>
-        <div class="cloud-five"></div> -->
-        <!-- <div class="cake"></div> -->
         <div class="kid"></div>
         <div class="bottom-bg"></div>
       </div>
@@ -189,7 +183,7 @@
           </div>
         </div>
         <div class="checked-btn">
-          <a>立即报名蓝青课程</a>
+          <a href="download.html">立即报名蓝青课程</a>
         </div>
       </div>
     </div>
@@ -345,7 +339,7 @@
           </div>
         </div>
         <div class="teacher-btn">
-          <a href="">立即体验名师授课经验</a>
+          <a href="download.html">立即体验名师授课经验</a>
         </div>
         <script language="javascript"> 
           var mySwiper = new Swiper('.swiper-container', {
@@ -433,36 +427,41 @@
           </div>
         </div>
         <div class="student-box">
-          <form action="">
+          <form>
             <div class="clearfix student-mb">
               <div class="input fl">
                 <label for="">联系人</label>
-                <input type="text" placeholder="请输入联系人">
+                <input type="text" placeholder="请输入联系人" id="contactPerson">
+                <span class="error" id="user-error">请输入联系人</span>
               </div>
               <div class="input fl mr0">
                 <label for="">机构名称</label>
-                <input type="text" placeholder="请输入机构名称">
+                <input type="text" placeholder="请输入机构名称" id="storeName">
+                <span class="error" id="company-error">请输入机构名称</span>
               </div>
             </div>
             <div class="clearfix">
               <div class="fl input-box">
                 <div class="input mr0 student-mb">
                   <label for="">联系电话</label>
-                  <input type="text" placeholder="请输入联系电话">
+                  <input type="text" placeholder="请输入联系电话" id="telPhone">
+                  <span class="error" id="phone-error">请输入合法手机号</span>
                 </div>
                 <div class="input mr0 code clearfix">
                   <label for="">验证码</label>
-                  <input type="text" placeholder="请输入验证码">
-                  <button>点击验证</button>
+                  <input type="text" placeholder="请输入验证码" id="verifyCode">
+                  <button type="button" id="code-btn">点击验证</button>
+                  <span class="error" id="code-error">请输入正确验证码</span>
                 </div>
               </div>
               <div class="input fl mr0">
                 <label for="">机构地址</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="请输入机构地址"></textarea>
+                <textarea name="" cols="30" rows="10" placeholder="请输入机构地址" id="address"></textarea>
+                <span class="error" id="address-error">请输入机构地址</span>
               </div>
             </div>
             <div class="btn">
-              <button>立即入驻</button>
+              <button type="button" id="submit-btn">立即入驻</button>
             </div>
           </form>
         </div>
@@ -504,13 +503,13 @@
       </div>
       <div class="fr">
         <input type="text" placeholder="请输入您的手机号">
-        <button>立即领取</button>
+        <a href="download.html"><button>立即领取</button></a>
       </div>
     </div>
   </div>
   <div class="function-box clearfix">
     <div class="ewm-img fl">
-      <img src="https://video.my51share.com/image/default/A7D5BC7ABEAA4C2F81BB49EEF26A0A02-6-2.png" alt="">
+      <img src="https://video.my51share.com/image/default/1522CFCAADC14C438EC365C4DB09D10D-6-2.png" alt="">
     </div>
     <div class="function-btn fl">
       <span class="erm-bg"><img src="https://video.my51share.com/image/default/EAFB1791995C4A59A700D7D75197CDAB-6-2.png"></span>

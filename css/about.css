@@ -137,8 +137,183 @@
 
 .amap-container {
   height: 100%;
+  border-radius:12px;
 }
 
 .pages.footer {
   position: static;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact, .about-content {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
+  .about-font {
+    padding-left: .2rem;
+  }
+
+  .my-map {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .ewm-wrapper {
+    display: none;
+  }
+
+  .fl, .fr {
+    float: none;
+  }
+
+  .about-img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
+  .about-font {
+    padding-left: 0;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .about-font span:last-child {
+    margin: 0;
+  }
+
+  .my-map {
+    width: 100%;
+  }
+
+  .contact {
+    margin: auto;
+    padding: .5rem 0;
+  }
+
+  .contact-font {
+    margin: auto;
+  }
+  
+  .contact-map {
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page.header {
+    height: auto;
+  }
+  .menu.fr {
+    float: right;
+  }
+
+  .banner {
+    width: 100%;
+    height: 5rem;
+    padding: 1.2rem 0;
+  }
+
+  .banner .title {
+    font-size:0.96rem;
+    font-family:Alibaba-PuHuiTi-M,Alibaba-PuHuiTi;
+    font-weight:normal;
+    color:rgba(255,255,255,1);
+    line-height:1.3rem;
+    margin-bottom: .4rem;
+  }
+
+  .banner .btn {
+    font-size:0.36rem;
+    font-family:Alibaba-PuHuiTi-R,Alibaba-PuHuiTi;
+    font-weight:normal;
+    color:rgba(255,255,255,1);
+    line-height:0.5rem;
+    padding: .17rem .31rem;
+    border-radius:0.14rem;
+    border:0.02rem solid rgba(255,255,255,1);
+  }
+
+  .about-img {
+    width: 100%;
+    margin-bottom: .38rem;
+  }
+
+  .about-img .img {
+    width: 100%;
+  }
+
+  .about-content {
+    padding: 1.2rem .2rem;
+  }
+
+  .about-font {
+    width: 100%;
+  }
+
+  .about-font span {
+    font-size:0.36rem;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:bold;
+    color:rgba(29,41,63,1);
+    line-height:0.64rem;
+    margin-bottom: .4rem;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 1.36rem .2rem 1.2rem;
+  }
+
+  .contact-font {
+    width: 100%;
+  }
+
+  .font-wrapper {
+    width:6.5rem;
+    margin: auto;
+    font-size:0.36rem;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:bold;
+    color:rgba(29,41,63,1);
+    line-height:0.84rem;
+  }
+
+  .font-wrapper .font-title {
+    width: 2rem;
+  }
+
+  .font-wrapper .font-content {
+    width: 4.5rem;
+  }
+
+  .fl {
+    float: left;
+  }
+  
+  .contact-map  {
+    width: 100%;
+  }
+
+  .my-map {
+    width:6.5rem;
+    height:5.48rem;
+    background:rgba(216,216,216,1);
+    border-radius:0.24rem;
+    margin: auto;
+  }
 }
