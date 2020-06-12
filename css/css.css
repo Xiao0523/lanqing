@@ -80,6 +80,11 @@ html {
   margin: auto;
 }
 
+.this_1200 {
+  width: 1200px;
+  margin: auto;
+}
+
 .color-line .first {
   display: block;
   width:52px;
@@ -131,6 +136,11 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+
+  .this_1200 {
+    width: 100%;
+  }
+
   .this_1110 {
     width: 100%;
   }
