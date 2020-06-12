@@ -1,0 +1,144 @@
+.page.header {
+  height: 83px;
+}
+
+.page .nav-list {
+  float: none;
+  display: inline-block;
+}
+
+.page .nav {
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding:  100px 0;
+  background: #00D4C6 url('https://video.my51share.com/image/default/727CDE619A01405F84F02413D738D641-6-2.png') no-repeat center top;
+  box-sizing: border-box;
+}
+
+.banner span {
+  text-align: center;
+  margin: auto;
+}
+
+.banner .title {
+  display: block;
+  font-size:48px;
+  font-weight:normal;
+  color:rgba(255,255,255,1);
+  line-height:65px;
+  margin-bottom: 40px;
+}
+
+.banner .btn {
+  padding: 16px 30px;
+  border-radius:7px;
+  border:1px solid rgba(255,255,255,1);
+  font-size:18px;
+  font-weight:normal;
+  color:rgba(255,255,255,1);
+  line-height:25px;
+  text-align: center;
+  margin: auto;
+}
+
+.about-content {
+  width: 100%;
+  padding: 80px 0 40px;
+  background: #FFF;
+  box-sizing: border-box;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  display: block;
+}
+
+.about-font {
+  width: 50%;
+  padding-left: 109px;
+  box-sizing: border-box;
+}
+
+.about-font span {
+  display: block;
+  width: 100%;
+  font-size:18px;
+  font-weight:bold;
+  color:rgba(29,41,63,1);
+  line-height:32px;
+  margin-bottom: 40px;
+  text-indent: 36px;
+}
+
+.contact {
+  width: 100%;
+  padding: 120px 0;
+  box-sizing: border-box;
+  background:rgba(0,209,160,0.04);
+}
+
+.contact-font {
+  width: 50%;
+}
+
+.contact-map {
+  width: 50%;
+}
+
+.font-wrapper {
+  width:404px;
+  font-size:18px;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:bold;
+  color:rgba(29,41,63,1);
+  line-height:42px;
+}
+
+.font-wrapper .font-title {
+  width: 100px;
+}
+
+.font-wrapper .font-content {
+  width: 304px;
+}
+
+.ewm-wrapper {
+  display: block;
+  width: 109px;
+}
+
+.ewm-wrapper img {
+  display: block;
+}
+
+.ewm-wrapper span {
+  display: block;
+  font-size:14px;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:bold;
+  color:rgba(29,41,63,1);
+  line-height:14px;
+  text-align: center;
+}
+
+.my-map { 
+  margin: 0 auto;
+  width: 540px;
+  height: 400px;
+}
+
+.amap-container {
+  height: 100%;
+}
+
+.pages.footer {
+  position: static;
+}
