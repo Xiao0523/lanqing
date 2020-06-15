@@ -1128,6 +1128,8 @@
 
   .student-box .input input, .student-box .input textarea {
     width: 100%;
+    height: .94rem;
+    line-height: .94rem;
   }
 
   .input .error {
