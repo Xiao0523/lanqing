@@ -14,7 +14,7 @@ $('.open').click(function() {
   }
   return false
 })
-
+var closeFlag = false
 $(document).ready(function(){
   $("#code-btn").click(function() {
     const phone = $('#telPhone').val()
@@ -96,34 +96,50 @@ $(document).ready(function(){
     $.ajax({
       url:'https://www.yourlanqing.com/Web/storeResident',
       type: 'post',
+      headers:{'Content-Type':'application/json;charset=utf8'},
       data: JSON.stringify(getObj),
       success: function (returnValue) {
         if (returnValue.code) {
-          $('#code-error').html('验证码发送失败，还在有效期')
-          $('#code-error').css("display", "block")
+          if (closeFlag) $('#message-tip').css("transform", "translateY(-200%)")
+          messageTip(returnValue.message)
+          $('#message-tip').css("background", "#fef0f0")
+          $('#message-tip').css("color", " #f56c6c")
+          close()
           return
         }
-        $('#code-btn').attr('disabled', true)
-        $('#code-btn').css('background', '#A8A8A8')
-        var time = 90  
-        $('#code-btn').html(time + 's 重新获取')
-        setInterval(function () {
-          if (time <= 1) {
-            $('#code-btn').attr('disabled', false)
-            $('#code-btn').css('background', 'linear-gradient(90deg,rgba(255,120,182,1) 0%,rgba(240,61,129,1) 100%)')
-            return
-          }
-          time--
-          $('#code-btn').html(time + 's 重新获取')
-        }, 1000);
+        if (closeFlag) $('#message-tip').css("transform", "translateY(-200%)")
+        messageTip('提交成功，我们稍后会与你联系！')
+        $('#message-tip').css("background", "#f0f9eb")
+        $('#message-tip').css("color", "#57c32a")
+        close()
+        $('#address').val() = ''
+        $('#contactPerson').val() = ''
+        $('#telPhone').val() = ''
+        $('#storeName').val() = ''
+        $('#verifyCode').val() = ''
       },
       error: function (returnValue) {
-        $('#code-error').html('验证码获取失败,请刷新重试')
-        $('#code-error').css("display", "block")
+        if (closeFlag) $('#message-tip').css("transform", "translateY(-200%)")
+        messageTip(returnValue.message)
+        close()
       }
     })
   })
 })
+
+function messageTip(msg) {
+  $('#message-tip').html(msg)
+  $('#message-tip').css("background", "#fef0f0")
+  $('#message-tip').css("color", " #f56c6c")
+  $('#message-tip').css("transform", "translateY(0%)")
+}
+
+function close() {
+  closeFlag = true
+  setTimeout(function() {
+    $('#message-tip').css("transform", "translateY(-200%)")
+  }, 3000)
+}
 
 function isPhoneNo(phone) {
   var pattern = /^1[34578]\d{9}$/
