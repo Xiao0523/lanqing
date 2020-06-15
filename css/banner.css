@@ -78,7 +78,7 @@
 }
 
 .banner-two .font-box .font-title {
-  font-size:54px;
+  font-size:48px;
   font-weight:bold;
   color:rgba(255,255,255,1);
   line-height:80px;
@@ -96,6 +96,10 @@
   color:rgba(255,255,255,1);
   line-height:34px;
   margin-top: 4px;
+}
+
+.banner-two .font-box a {
+  text-decoration: none;
 }
 
 .banner-two .font-box .font-btn {
