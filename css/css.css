@@ -39,7 +39,13 @@ ol,ul,li {
   list-style: none;
 }
 input, textarea, select, button {
-  font: 14px Verdana,Helvetica,Arial,sans-serif;
+  font: 14px;
+  -webkit-appearance: none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-appearance: none;
 }
 table {
   border-collapse: collapse;

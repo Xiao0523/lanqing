@@ -103,13 +103,13 @@
 }
 
 .banner-two .font-box .font-btn {
-  width:205px;
-  height:58px;
+  width:180px;
+  height:54px;
   text-align: center;
-  line-height: 58px;
+  line-height: 54px;
   border-radius:35px;
   border:2px solid rgba(255,255,255,1);
-  font-size:23px;
+  font-size:20px;
   font-weight:normal;
   color:rgba(255,255,255,1);
   margin-top: 23px;
@@ -525,14 +525,14 @@
   }
 
   .banner-two .font-box .font-btn {
-    width:4.1rem;
-    height:1.16rem;
+    width: 3.6rem;
+    height: 1.08rem;
     border-radius:0.71rem;
     border:0.04rem solid rgba(255,255,255,1);
-    font-size:0.4rem;
+    font-size: 0.4rem;
     font-weight:normal;
     color:rgba(255,255,255,1);
-    line-height:1.16rem;
+    line-height: 1.08rem;
     margin: auto;
   }
   
