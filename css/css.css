@@ -10,7 +10,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body {
   background: #fff;
   color: #555;
-  font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1', 'pingfang sc', arial, tahoma;
+  font: 12px/1.5 "Apple System", "SF Pro SC", "SF Pro Display",
+  "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB",
+  "STHeiti", "Microsoft YaHei", "Microsoft JhengHei",
+  "Source Han Sans SC", "Noto Sans CJK SC",
+  "Source Han Sans CN", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
