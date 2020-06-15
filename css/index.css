@@ -551,11 +551,17 @@
   outline: none;
 }
 
+.index-footer {
+  padding-bottom: 70px;
+}
+
 .pick-tips {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width:100%;
   height:70px;
   background:linear-gradient(90deg,rgba(0,214,211,1) 0%,rgba(0,206,124,1) 100%);
+  z-index: 1000;
 }
 
 .pick-tips img {

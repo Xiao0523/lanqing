@@ -5,7 +5,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body {
   background: #fff;
   color: #555;
-  font: 12px/1.5 tahoma, arial ,"\5FAE\8F6F\96C5\9ED1";
+  font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1', 'pingfang sc', arial, tahoma;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
