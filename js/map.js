@@ -1,7 +1,7 @@
 !function(){
   var infoWindow, map, level = 17,
-    center = {lng: 121.549729, lat: 29.802847},
-    features = [{type: "Marker", name: "宁波一顺二维文化传媒有限公司", desc: "浙江省宁波市鄞州区南部商务区泰安中路177号海运大厦6楼", color: "red", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 121.549488, lat: 29.802838}}];
+    center = {lng: 121.549764, lat: 29.802949},
+    features = [{type: "Marker", name: "宁波一顺二维文化传媒有限公司", desc: "浙江省宁波市鄞州区南部商务区泰安中路177号海运大厦6楼", color: "red", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 121.549643, lat: 29.802763}}];
 
   function loadFeatures(){
     for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
@@ -29,6 +29,14 @@
           break;
         default: feature = null;
       }
+      var infoWindow = new AMap.InfoWindow({autoMove: true});
+      infoWindow.setContent("<h5>" + data.name + "</h5><div>" + data.desc + "</div>");
+      infoWindow.open(map, {
+        M: 121.54971572023771,
+        O: 29.802949000000012,
+        lat: 29.802949,
+        lng: 121.549716
+      })
       if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
     }
   }
@@ -51,5 +59,4 @@
     map.addControl(new AMap.Scale);
     });	
   })
-  
 }();
