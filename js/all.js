@@ -37,10 +37,12 @@ $(document).ready(function(){
         $('#code-btn').css('background', '#A8A8A8')
         var time = 90  
         $('#code-btn').html(time + 's 重新获取')
-        setInterval(function () {
+        let timeClock = setInterval(function () {
           if (time <= 1) {
             $('#code-btn').attr('disabled', false)
             $('#code-btn').css('background', 'linear-gradient(90deg,rgba(255,120,182,1) 0%,rgba(240,61,129,1) 100%)')
+            $('#code-btn').html('获取验证码')
+            clearInterval(timeClock)
             return
           }
           time--
