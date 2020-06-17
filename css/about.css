@@ -273,7 +273,7 @@
   }
 
   .about-content {
-    padding: 1.2rem .2rem;
+    padding: 1.2rem .5rem;
   }
 
   .about-font {
@@ -281,9 +281,8 @@
   }
 
   .about-font span {
-    font-size:0.36rem;
+    font-size:0.3rem;
     font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:bold;
     color:rgba(29,41,63,1);
     line-height:0.64rem;
     margin-bottom: .4rem;
@@ -291,7 +290,7 @@
 
   .contact {
     width: 100%;
-    padding: 1.36rem .2rem 1.2rem;
+    padding: 1.36rem .5rem 1.2rem;
   }
 
   .contact-font {
@@ -301,9 +300,8 @@
   .font-wrapper {
     width:6.5rem;
     margin: auto;
-    font-size:0.36rem;
+    font-size:0.3rem;
     font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:bold;
     color:rgba(29,41,63,1);
     line-height:0.84rem;
   }

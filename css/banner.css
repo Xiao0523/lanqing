@@ -174,12 +174,11 @@
 }
 
 .banner-one .seven {
+  width: 584px;
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  margin-left: -292px;
 }
 
 .banner-one .eight {
@@ -201,15 +200,19 @@
   margin: auto;
 }
 
-.banner-one span.font-title {
-  font-size:60px;
+.banner-one .font-title {
+  position: relative;
+  display: block;
+  font-size: 48px;
   font-weight: bold;
-  color: rgba(255,255,255,1);
+  color: transparent;
   line-height: 82px;
-  text-shadow: 0px 6px 34px rgba(1,17,213,0.84);
-  background: linear-gradient(270deg, rgba(251,253,254,1) 60%, rgba(147,160,243,1) 100%);
+  /* text-shadow: 0px 6px 34px rgba(1,17,213,0.84); */
+  background: linear-gradient(to left, rgba(251,253,254,1), rgba(147,160,243,1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: auto;
+  text-align: center;
 }
 
 .banner-one span.font-content {

@@ -54,7 +54,7 @@ html, body {
 }
 
 .phone-font .phone-title {
-  font-size:60px;
+  font-size:40px;
   font-weight:600;
   color:rgba(29,41,63,1);
   line-height:70px;
@@ -216,7 +216,7 @@ html, body {
   }
 
   .phone-font .phone-title {
-    font-size:0.96rem;
+    font-size:0.8rem;
     font-family:PingFangSC-Semibold,PingFang SC;
     font-weight:600;
     color:rgba(29,41,63,1);

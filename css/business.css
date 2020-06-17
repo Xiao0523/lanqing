@@ -4,14 +4,30 @@ html, body {
   overflow: auto;
 }
 
-.banner {
+.page.header {
   position: relative;
+  z-index: 9999;
+}
+
+.page.header .nav {
+  position: static;
+}
+
+.page.header .nav .logo {
+  position: relative;
+} 
+
+.banner {
+  position: absolute;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(236,236,236,1) 100%);
   padding-bottom: 117px;
+  padding-top: 83px;
   box-sizing: border-box;
   overflow: hidden;
+  top: 0;
+  z-index: 1;
 }
 
 .banner-content {
@@ -25,10 +41,22 @@ html, body {
   box-sizing: border-box;
 }
 
+.font-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-top: 83px;
+  box-sizing: border-box;
+}
+
 .font-box {
   position: absolute;
   width: 100%;
-  top: 215px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 999;
 }
 
@@ -39,7 +67,7 @@ html, body {
 }
 
 .font-box span.font-title {
-  font-size:58px;
+  font-size:40px;
   font-weight:bold;
   color:rgba(29,41,63,1);
   line-height:64px;
@@ -71,7 +99,7 @@ html, body {
   color:rgba(255,255,255,1);
   line-height:55px;
   margin: auto;
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
 .font-box span.font-tips {
@@ -82,9 +110,17 @@ html, body {
   margin-top: 15px;
 }
 
+.bg-wrapper {
+  position: relative;
+  height: calc(50% - 200px);
+  bottom: 0px;
+  margin-bottom: 117px;
+  box-sizing: border-box;
+}
+
 .last-bg {
   position: absolute;
-  bottom: 117px;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -97,7 +133,7 @@ html, body {
 
 .one-bg {
   position: absolute;
-  bottom: 117px;
+  bottom: 0;
   left: 0;
 }
 
@@ -108,8 +144,47 @@ html, body {
 .two-bg {
   position: absolute;
   right: 0;
-  bottom: 307px;
+  bottom: 190px;
 }
+
+.pages.footer {
+  z-index: 999;
+}
+
+@media screen and (max-height: 950px) and (min-width: 1024px) {
+  .one-bg {
+    bottom: 0;
+  }
+  .two-bg {
+    top: -90px;
+  }
+
+  .last-bg {
+    top: 0;
+  }
+} 
+
+
+@media screen and (max-height: 850px) and (min-width: 1024px) {
+  .one-bg {
+    bottom: -50%;
+  }
+  .two-bg {
+    top: -90px;
+  }
+
+  .last-bg {
+    top: 0;
+  }
+} 
+
+
+@media screen and (max-height: 750px) and (min-width: 1024px) {
+  .one-bg {
+    display: none;
+  }
+} 
+
 
 @media screen and (max-width: 1023px) {
   body {
@@ -148,7 +223,7 @@ html, body {
   }
 
   .font-box span.font-title {
-    font-size:0.96rem;
+    font-size:.8rem;
     font-weight:600;
     color:rgba(29,41,63,1);
     line-height:1.4rem;
