@@ -1,7 +1,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .banner {
@@ -193,6 +193,11 @@ html, body {
 
 
 @media screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow-y: scroll;
+  }
+  
   .page.header {
     box-shadow:0rem 0.02rem 0.06rem 0rem rgba(0,0,0,0.1);
   }

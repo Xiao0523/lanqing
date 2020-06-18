@@ -212,6 +212,11 @@ html, body {
 }
 
 @media screen and (max-width: 767px) {
+  html, body {
+    height: auto;
+    overflow-y: scroll;
+  }
+
   .banner {
     position: relative;
     height: 14.8rem;

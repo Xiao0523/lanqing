@@ -19,8 +19,20 @@
 </head>
 <body>
   <div class="header">
-    <div class="nav is-pc">
+    <div class="nav is-pc index">
       <div class="logo"><img src="https://video.my51share.com/image/default/350398B19B4047F89D1E335AE2AFD8D5-6-2.png" alt=""></div>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="download.html">蓝青教育APP</a></li>
+        <li><a href="business.html">蓝青商户版</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li class="nav-btn"><a href="https://www.mylanqing.com/">前往商户端</a></li>
+      </ul>
+    </div>
+    <div class="nav is-pc fix">
+      <div class="logo">
+        <img src="https://video.my51share.com/image/default/F7C78C597594415DB6DC7D6891D16CEA-6-2.png" alt="">
+      </div>
       <ul class="nav-list">
         <li><a href="index.html" class="active">首页</a></li>
         <li><a href="download.html">蓝青教育APP</a></li>
@@ -55,8 +67,7 @@
       </div>
     </div>
     <div class="banner swiper-container1 is-pc">
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="banner-one">
@@ -96,13 +107,10 @@
   </div>
   <script language="javascript"> 
     var mySwiper = new Swiper('.swiper-container1', {
-      prevButton: '.swiper-button-prev',
-      nextButton: '.swiper-button-next',
-	    // autoplay: 3000,//可选选项，自动滑动
+	    autoplay: 5000, // 可选选项，自动滑动
       loop: true,
-      onSlideChangeStart: function(swiper){
-        AOS.refresh();
-      }
+      paginationClickable :true,
+      pagination : '.swiper-pagination'
     })
   </script>
   <div class="main">
@@ -212,7 +220,11 @@
         <div class="video-content" data-aos-duration="1000" data-aos-delay="100" data-aos="fade-up">
           <div class="video-wrapper clearfix">
             <span class="fl video-left"><img src="https://video.my51share.com/image/default/6728AEE849834D1C80BEFB79F822F3D1-6-2.png" alt=""></span>
-            <img src="https://video.my51share.com/image/default/D9E56CC43B6841D1A40D8BC5E0A10EC1-6-2.png" alt="" class="video-border fl">
+            <div class="video-box fl">
+              <video class="video-border" controls autoplay poster="https://video.my51share.com/image/default/4D7D931254CE4A57B8922AFCE5952BD7-6-2.png">
+                <source src="https://video.my51share.com/sv/1929bce9-172c4e7921e/1929bce9-172c4e7921e.mp4" type="video/mp4">
+              </video>
+            </div>
             <span class="fr video-right"><img src="https://video.my51share.com/image/default/357A536DF79C4A0EAA48FCABEA95C5DC-6-2.png" alt=""></span>
           </div>
           <div class="video-content-nums clearfix" data-aos-duration="1000" data-aos-delay="300" data-aos="fade-left">
@@ -262,7 +274,7 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/68979946FFB54A1FA78205DF4D1CFCC0-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/75BC5358B457414AACAFCE97B35283A0-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
                     <span>汪清</span>
@@ -276,7 +288,7 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/EEC81500C03242D4A1D62F12BF5B0A6E-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/915D165E197240DBA8DFA31EB145F291-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
                     <span>黎泽洋</span>
@@ -290,7 +302,7 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/AF3E28BAF9314175AC96C5B8BF854B64-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/449A41E2899342548A07E4364850F5FE-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
                     <span>张小萍</span>
@@ -304,10 +316,10 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/A55C4B226DD949149FA6F235168779B4-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/EE098A08D14E4AC681675C1856A85DDD-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
-                    <span>刘雅昕</span>
+                    <span>许伟</span>
                     <div class="teacher-tag">
                       <span>东南大学</span>
                       <span>教龄15年</span>
@@ -318,10 +330,10 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/F79BB6E1BAF941C1A02277001B1B3884-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/441C200658D740BB862355BC99474C05-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
-                    <span>许伟</span>
+                    <span>刘雅昕</span>
                     <div class="teacher-tag">
                       <span>南开大学</span>
                       <span>教龄12年</span>
@@ -332,13 +344,41 @@
               <div class="swiper-slide">
                 <div class="teacher-wrapper">
                   <div class="img-box">
-                    <img src="https://video.my51share.com/image/default/FA3C5A63FB2C44EEA485C4B07FD95E77-6-2.png" alt="">
+                    <img src="https://video.my51share.com/image/default/BA4BD9809DAC48C785FC9BBD176BC1DE-6-2.png" alt="">
                   </div>
                   <div class="teacher-title">
                     <span>郁青青</span>
                     <div class="teacher-tag clearfix">
                       <span>浙江大学</span>
                       <span>教龄15年</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teacher-wrapper">
+                  <div class="img-box">
+                    <img src="https://video.my51share.com/image/default/B82696DBBD7F4B578B2A4669B2318776-6-2.png" alt="">
+                  </div>
+                  <div class="teacher-title">
+                    <span>周燕</span>
+                    <div class="teacher-tag">
+                      <span>辽宁大学</span>
+                      <span>教龄7年</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teacher-wrapper">
+                  <div class="img-box">
+                    <img src="https://video.my51share.com/image/default/5DC24B22A67647C0BFD9DD4D6D9261B3-6-2.png" alt="">
+                  </div>
+                  <div class="teacher-title">
+                    <span>陈涛</span>
+                    <div class="teacher-tag clearfix">
+                      <span>温州大学</span>
+                      <span>教龄9年</span>
                     </div>
                   </div>
                 </div>
@@ -353,8 +393,10 @@
           var mySwiper = new Swiper('.swiper-container', {
             slidesPerView : 4,
             slidesPerGroup : 4,
+            loop: true,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next',
+            autoplay: 3000,
             breakpoints: {
             //当宽度小于等于1024
               1024: {
@@ -521,9 +563,9 @@
       <img src="https://video.my51share.com/image/default/1522CFCAADC14C438EC365C4DB09D10D-6-2.png" alt="">
     </div>
     <div class="function-btn fl">
-      <span class="erm-bg"><img src="https://video.my51share.com/image/default/EAFB1791995C4A59A700D7D75197CDAB-6-2.png"></span>
-      <span class="qq-bg"><img src="https://video.my51share.com/image/default/E773C71BFFDE497D9195C90E7354F89C-6-2.png" alt=""></span>
-      <span class="top-bg"><img src="https://video.my51share.com/image/default/D2AB005C986D49C7825D1ACE0B1813E3-6-2.png" alt=""></span>
+      <div class="erm-bg box-bg"><img src="https://video.my51share.com/image/default/EAFB1791995C4A59A700D7D75197CDAB-6-2.png"></div>
+      <div class="qq-bg box-bg"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3471858920&site=qq&menu=yes"><img src="https://video.my51share.com/image/default/E773C71BFFDE497D9195C90E7354F89C-6-2.png" alt=""></a></div>
+      <div class="top-bg box-bg"><img src="https://video.my51share.com/image/default/D2AB005C986D49C7825D1ACE0B1813E3-6-2.png" alt=""></div>
     </diiv>
   </div>
   <script>
